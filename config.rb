@@ -46,6 +46,18 @@ activate :blog do |blog|
   # blog.page_link = "page/{num}"
 end
 
+activate :blog do |blog|
+  # This will add a prefix to all links, template references and source paths
+  blog.prefix = "partners"
+  blog.name   = "partners"
+
+  blog.permalink = "{title}.html"
+  # Matcher for blog source files
+  blog.sources = "{title}.html"
+  
+  blog.default_extension = ".md"
+end
+
 page "/feed.xml", layout: false
 # Reload the browser automatically whenever files change
 # configure :development do
