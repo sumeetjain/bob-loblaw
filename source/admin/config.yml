@@ -1,0 +1,16 @@
+backend:
+  name: github
+  repo: sumeetjain/bob-loblaw
+  branch: master
+
+media_folder: "images/uploads"
+
+collections:
+  - name: "partner"
+    label: "Partner"
+    folder: "source/partners"
+    create: true
+    fields:
+      - {label: "Name", name: "full_name", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      
