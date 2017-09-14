@@ -1,2 +1,11 @@
 ---
 ---
+
+<p>Welcome to our firm's website. We take pride in being the best--and no double talk!</p>
+
+<h2>Our Partners</h2>
+<ul>
+  <% blog("partners").articles.each do |partner| %>
+    <li><%= link_to partner.data.full_name, partner %></li>
+  <% end %>
+</ul>
