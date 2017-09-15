@@ -1,5 +1,5 @@
 ---
-full_name: Bob Loblaw
+full_name: Robert Loblaw
 date: 2017-09-14 22:13 UTC
 ---
 
