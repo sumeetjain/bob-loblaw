@@ -6,6 +6,6 @@
 <h2>Our Partners</h2>
 <ul>
   <% blog("partners").articles.each do |partner| %>
-    <li><%= link_to partner.data.full_name, partner %></li>
+    <li><%= link_to(partner.data.full_name, partner) %></li>
   <% end %>
 </ul>
